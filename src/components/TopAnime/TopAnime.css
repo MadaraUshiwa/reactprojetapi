@@ -107,6 +107,7 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .topanime-button-click{
@@ -114,11 +115,15 @@
     border: none;
     width: 170px;
     height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
     cursor: pointer;
     background-color: white;
     outline: none;
     border: 1.5px solid hsl(296, 63%, 65%);
     border-radius: 50px;
+    text-decoration: none;
     &:hover{
         background-color: hsl(296, 63%, 65%);
         color: white;

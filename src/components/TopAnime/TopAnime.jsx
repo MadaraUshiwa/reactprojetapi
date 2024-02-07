@@ -6,7 +6,7 @@ function TopAnime(props) {
   const [topAnime, setTopAnime] = useState([]);
   const [search, setSearch] = useState("");
   const [episodeFilter, setEpisodeFilter] = useState("Tous");
-
+ 
   useEffect(() => {
     fetch("https://api.jikan.moe/v4/top/anime")
       .then((res) => res.json())

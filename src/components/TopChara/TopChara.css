@@ -1,0 +1,100 @@
+.character {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.character-content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.character-header {
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.character-header select {
+    height: 30px;
+    width: 15%;
+}
+
+.search {
+    display: flex;
+    padding-left: 0.5%;
+    height: 27px;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 25%;
+    gap: 2%;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.character-grid {
+    display: grid;
+    width: 100%;
+    margin-top: 3%;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5%;
+    row-gap: 1%;
+}
+
+.character-card {
+    width: 100%;
+    display: flex;
+    position: relative;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.character-card:hover .character-card-content {
+    height: 32%;
+}
+
+.character-card img {
+    width: 100%;
+}
+
+.character-card-content {
+    color: #f854ff;
+    z-index: 1;
+    background-color: #140c2e;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 0%;
+    transition: 0.3s;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+
+.character-card-content p {
+    width: 100%;
+    padding-top: 5%;
+    margin: 0;
+}
+
+.character-name {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+}
+
+.character-pseudo {
+    font-size: 14px;
+    font-weight: 400;
+}
+
